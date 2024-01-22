@@ -29,10 +29,20 @@
       h3,
       h4,
       h5,
-      h6 {
+      h6,
+      p {
         display: block;
         margin: 0;
         padding: 0;
+      }
+      #firstParagraph {
+        margin-top: 10px;
+      }
+
+      #fourthParagraph {
+        margin-top: 0px !important;
+        margin-bottom: 20px !important;
+        padding-bottom: 20px !important;
       }
 
       img,
@@ -112,7 +122,7 @@
       }
 
       #bodyCell {
-        padding: 20px;
+        padding: 0 24px;
       }
 
       .templateContainer {
@@ -184,35 +194,17 @@
         /*@editable*/
         text-align: left;
       }
-      h5 {
+      /*
+		@tab Page
+		@ordered list
+		*/
+      ul {
         /*@editable*/
         color: #333;
         /*@editable*/
         font-family: Helvetica;
         /*@editable*/
         font-size: 16px;
-        /*@editable*/
-        font-style: normal;
-        /*@editable*/
-        font-weight: 600;
-        /*@editable*/
-        line-height: 32px;
-        /*@editable*/
-        letter-spacing: normal;
-        /*@editable*/
-        text-align: left;
-      }
-      /*
-		@tab Page
-		@ordered list
-		*/
-      ol {
-        /*@editable*/
-        color: #333;
-        /*@editable*/
-        font-family: Helvetica;
-        /*@editable*/
-        font-size: 18px;
         /*@editable*/
         font-style: normal;
         /*@editable*/
@@ -276,21 +268,29 @@
         /*@editable*/
         text-align: left;
       }
-
-      .button {
-        background-color: #232323;
-        color: #fffcf4;
-        padding: 8px 21px;
-        border: 1px solid #fffcf4;
-        border-radius: 25px 0 0 25px;
-      }
-
-      .right__button {
-        background-color: #2054d2;
-        color: #fff;
-        border: 1px solid #fffcf4;
-        padding: 8px 10px;
-        border-radius: 0 25px 25px 0;
+      /*
+		@tab Page
+		@section Heading 3
+		@tip Set the styling for all third-level headings in your emails.
+		@style heading 3
+		*/
+      h5 {
+        /*@editable*/
+        color: #333;
+        /*@editable*/
+        font-family: Helvetica;
+        /*@editable*/
+        font-size: 16px;
+        /*@editable*/
+        font-style: normal;
+        /*@editable*/
+        font-weight: 600;
+        /*@editable*/
+        line-height: 32px;
+        /*@editable*/
+        letter-spacing: normal;
+        /*@editable*/
+        text-align: left;
       }
 
       @media only screen and (min-width: 768px) {
@@ -326,7 +326,7 @@
 		*/
         h1 {
           /*@editable*/
-          font-size: 22px !important;
+          font-size: 16px !important;
           /*@editable*/
           line-height: 125% !important;
         }
@@ -369,6 +369,19 @@
         h4 {
           /*@editable*/
           font-size: 16px !important;
+          /*@editable*/
+          line-height: 150% !important;
+        }
+      }
+      @media only screen and (max-width: 480px) {
+        /*
+		@tab Mobile Styles
+		@section Heading 4
+		@tip Make the fourth-level headings larger in size for better readability on small screens.
+		*/
+        h5 {
+          /*@editable*/
+          font-size: 14px !important;
           /*@editable*/
           line-height: 150% !important;
         }
@@ -418,14 +431,7 @@
         id="bodyTable"
       >
         <tr>
-          <td align="center" valign="top" id="bodyCell">
-            <!-- BEGIN TEMPLATE // -->
-            <!--[if (gte mso 9)|(IE)]>
-					<table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
-					<tr>
-					<td align="center" valign="top" width="600" style="width:600px;">
-					<![endif]-->
-
+          <td align="center" valign="top">
             <table
               border="0"
               cellpadding="0"
@@ -433,22 +439,6 @@
               width="100%"
               class="templateContainer"
             >
-              <tr>
-                <td>
-                  <table role="presentation">
-                    <tr>
-                      <td style="padding: 24px 0px 40px">
-                        <img
-                          src="https://userimg-assets.customeriomail.com/images/client-env-122594/1684939562212_aella-logo_01H173JQJTB42EGGSC4N4P08AW.png"
-                          alt="Aella Logo"
-                          width="70px"
-                        />
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-
               <tr>
                 <td align="center">
                   <table
@@ -459,116 +449,18 @@
                       border: 0;
                       border-spacing: 0;
                       background: #ffffff;
-                      margin-bottom: 32px;
                     "
                   >
                     <tr>
                       <td>
                         <img
-                          src="https://userimg-assets.customeriomail.com/images/client-env-122594/1700477194851_Header_01HFP5DP18TAXBYXJZBD8957PY.jpg"
+                          src="https://userimg-assets.customeriomail.com/images/client-env-122596/1703232135476_card%202%201_01HJ88QRVJENH274RQ8MHCR0Q2.jpg"
                           height="100%"
                           width="100%"
                           alt=""
                           class="mcnImage"
+                          style="margin-bottom: 32px"
                         />
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  <table
-                    role="presentation"
-                    border="0"
-                    width="100%"
-                    cellspacing="0"
-                  >
-                    <tr>
-                      <td>
-                        <h1>Take a look at your money moves this year</h1>
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <td>
-                        <p style="margin: 20px 0 10px; padding: 0">
-                          Hi /First Name/,
-                        </p>
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <td>
-                        <p style="margin: 10px 0; padding: 0">
-                          Your Aella 2023 Wrap is live! Are you ready to see
-                          your money moves? Let’s see how much you’ve earned,
-                          kept, spent and saved this year.
-                        </p>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-
-              <tr>
-                <td align="center">
-                  <a href="{Dynamic URL}" target="_blank">
-                    <div
-                      style="
-                        margin: 10px 0;
-                        margin-bottom: 20px;
-                        display: flex;
-                        justify-content: center;
-                        height: 45px;
-                      "
-                    >
-                      <button class="button">
-                        See your detailed spending breakdown
-                      </button>
-
-                      <button class="right__button">></button>
-                    </div>
-                  </a>
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  <p style="margin: 10px 0; padding: 0">
-                    /First Name/, Your journey with Aella is more than just
-                    numbers. It’s about every choice, tap, swipe, save and every
-                    financial win. We are proud to be a part of your success
-                    story.
-                  </p>
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  <table
-                    role="presentation"
-                    border="0"
-                    width="100%"
-                    cellspacing="0"
-                    style="-webkit-font-smoothing: antialiased"
-                  >
-                    <tr>
-                      <td valign="center" align="left" style="padding: 0">
-                        <p style="margin: 32px 0 2px; font-size: 15px">
-                          Your Buddy,
-                        </p>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td
-                        valign="center"
-                        align="left"
-                        width="35%"
-                        style="padding: 0"
-                      >
-                        <p style="margin: 0px 0 14px; font-size: 15px">Aella</p>
                       </td>
                     </tr>
                   </table>
@@ -586,43 +478,59 @@
                     <tr>
                       <td align="left">
                         <img
-                          src="https://userimg-assets.customeriomail.com/images/client-env-122594/1684939558739_aella-black-logo_01H173JM2ZY83H60QYC2B70FC4.png"
-                          width="80%"
+                          src="https://userimg-assets.customeriomail.com/images/client-env-122594/1703235055408_logofooter_01HJ8BGW55KCNXCREYXPAWMWQK.png"
+                          width="75"
                           alt=""
                         />
                       </td>
 
                       <td width="40%"></td>
-                      <td align="right" style="padding: 10px 2px">
+                      <td align="right" style="padding: 10px 0 10px 2px">
                         <a
                           target="_blank"
                           href="https://www.facebook.com/aellaapp/"
                         >
                           <img
                             src="https://userimg-assets.customeriomail.com/images/client-env-122594/1684939550269_facebook_01H173JBTKK39BHF7XSDTCW17Q.png"
-                            width="40%"
+                            width="25"
+                            height="25"
                             alt="facbookIcon"
                           />
                         </a>
                       </td>
-                      <td align="center" style="padding: 10px 2px">
+
+                      <td align="right" style="padding: 10px 0 10px 2px">
                         <a target="_blank" href="https://twitter.com/aella">
                           <img
-                            src="https://userimg-assets.customeriomail.com/images/client-env-122594/1684939557151_tweeter_01H173JJMNRV5M37BRDRK84TP8.png"
-                            width="40%"
-                            alt="tweeterIcon"
+                            src="https://userimg-assets.customeriomail.com/images/client-env-122594/1703235047692_logotwitter%201_01HJ8BGMMFR9B8HB4Q0BCF70GD.png"
+                            width="25"
+                            height="25"
+                            alt="XIcon"
                           />
                         </a>
                       </td>
-                      <td align="left" style="padding: 10px 2px">
+
+                      <td align="right" style="padding: 10px 0 10px 2px">
                         <a
                           target="_blank"
                           href="https://www.instagram.com/aellaapp/"
                         >
                           <img
                             src="https://userimg-assets.customeriomail.com/images/client-env-122594/1684939565890_instagram_01H173JV5NNQYVVJDD7R8BS39X.png"
-                            width="40%"
+                            width="25"
+                            height="25"
                             alt="instagramIcon"
+                          />
+                        </a>
+                      </td>
+
+                      <td align="right" style="padding: 10px 0 10px 2px">
+                        <a target="_blank" href="#">
+                          <img
+                            src="https://userimg-assets.customeriomail.com/images/client-env-122594/1703239256094_tiktokfooter_01HJ8FH2GM4KH2AT9TKBA8M0KY.png"
+                            width="25"
+                            height="25"
+                            alt="TiktokIcon"
                           />
                         </a>
                       </td>
@@ -632,7 +540,7 @@
               </tr>
               <tr>
                 <td>
-                  <p style="margin: 16px 0; padding: 0; font-size: 16px">
+                  <p style="margin: 16px 0; padding: 0; text-align: justify">
                     Should you need our help, you can simply reply this message
                     or use any of our social media pages.
                   </p>
@@ -651,7 +559,6 @@
                         <h3 style="margin-bottom: 8px">Get the Aella App</h3>
                       </td>
                     </tr>
-
                     <tr>
                       <td>
                         <table
@@ -661,30 +568,31 @@
                           cellspacing="0"
                         >
                           <tr>
-                            <td align="left" style="width: 30%">
+                            <td align="left" style="width: 25%">
                               <a
                                 target="_blank"
                                 href="https://l.aella.app/aellaappios"
                               >
                                 <img
                                   src="https://userimg-assets.customeriomail.com/images/client-env-122594/1684939554189_app-store_01H173JFQXDXA641VDT9MKZBVP.png"
-                                  width="50%"
-                                  alt=""
+                                  width="100"
+                                  alt="Apple button"
                                 />
                               </a>
                             </td>
-                            <td style="width: 30%" align="left">
+                            <td align="left" style="width: 25%">
                               <a
                                 target="_blank"
                                 href="https://l.aella.app/aellaappandroid"
                               >
                                 <img
                                   src="https://userimg-assets.customeriomail.com/images/client-env-122594/1684939563645_google-play_01H173JRZKP28THNQ4YNPAM48H.png"
-                                  width="50%"
-                                  alt=""
+                                  width="100"
+                                  alt="Android button"
                                 />
                               </a>
                             </td>
+                            <td style="width: 50%"></td>
                           </tr>
                         </table>
                       </td>
