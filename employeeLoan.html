@@ -12,12 +12,6 @@
     <link rel="stylesheet" href="https://use.typekit.net/sob5jke.css" />
 
     <style type="text/css">
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
       table {
         border-collapse: collapse;
       }
@@ -115,7 +109,6 @@
 
       .templateContainer {
         max-width: 600px !important;
-        background-color: #e5b79f;
       }
 
       .mcnTextContent {
@@ -126,12 +119,23 @@
         height: auto !important;
       }
 
+      /*
+    @tab Page
+    @section Background Style
+    @tip Set the background color and top border for your email. You may want to choose colors that match your company's branding.
+    */
       body,
       #bodyTable {
         /*@editable*/
         background-color: #ffffff;
       }
 
+      /*
+    @tab Page
+    @section Heading 1
+    @tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
+    @style heading 1
+    */
       h1 {
         /*@editable*/
         color: #333;
@@ -151,6 +155,10 @@
         text-align: left;
       }
 
+      /*
+    @tab Page
+    @section paragraph
+    */
       p {
         /*@editable*/
         color: #333;
@@ -189,6 +197,10 @@
         text-align: left;
       }
 
+      /*
+    @tab Page
+    @ordered list
+    */
       ol {
         /*@editable*/
         color: #333;
@@ -210,36 +222,12 @@
         padding: 0 0 0 20px !important;
       }
 
-      .ul {
-        color: black;
-        font-family: upgrade, Helvetica;
-        font-size: 14px;
-        font-weight: 600;
-        text-align: left;
-        padding: 0;
-        line-height: 19px;
-        padding-left: 20px;
-      }
-
-      ul {
-        font-family: upgrade, Helvetica;
-      }
-      ul li {
-        font-size: 14px;
-        font-weight: 100;
-      }
-
-      ul li::marker {
-        color: black;
-      }
-
-      .paragraph {
-        margin: 10px 0;
-        padding: 0;
-        font-weight: 300;
-        font-size: 16px;
-      }
-
+      /*
+    @tab Page
+    @section Heading 2
+    @tip Set the styling for all second-level headings in your emails.
+    @style heading 2
+    */
       h2 {
         /*@editable*/
         color: #333;
@@ -278,26 +266,19 @@
         border-left: 1px solid #fff;
       }
 
-      .textArea {
-        background-color: #f1f1f1 !important;
-        padding-top: 20px;
-        padding-left: 10px;
-        margin-left: 10px;
-        margin-right: 10px;
-        border-radius: 10px;
-        margin-top: 10px;
-
-        color: #000 !important;
-        border: 1px solid #639fffb5;
-      }
-
+      /*
+    @tab Page
+    @section Heading 3
+    @tip Set the styling for all third-level headings in your emails.
+    @style heading 3
+    */
       h3 {
         /*@editable*/
         color: #333;
         /*@editable*/
         font-family: upgrade, Helvetica;
         /*@editable*/
-        font-size: 12px;
+        font-size: 14px;
         /*@editable*/
         font-style: normal;
         /*@editable*/
@@ -321,17 +302,6 @@
 
       .horizontal__line {
         border: 0.5px solid rgba(255, 255, 255, 0.47);
-      }
-
-      .move_to_left {
-        transform: translateX(-4.5%);
-      }
-      @media (prefers-color-scheme: dark) {
-        .textArea {
-          background: linear-gradient(to right, #ffffff, #ffffff);
-
-          color: black;
-        }
       }
 
       @media only screen and (min-width: 768px) {
@@ -360,6 +330,11 @@
       }
 
       @media only screen and (max-width: 480px) {
+        /*
+    @tab Mobile Styles
+    @section Heading 1
+    @tip Make the first-level headings larger in size for better readability on small screens.
+    */
         h1 {
           /*@editable*/
           font-size: 22px !important;
@@ -369,6 +344,11 @@
       }
 
       @media only screen and (max-width: 480px) {
+        /*
+    @tab Mobile Styles
+    @section Heading 2
+    @tip Make the second-level headings larger in size for better readability on small screens.
+    */
         h2 {
           /*@editable*/
           font-size: 20px !important;
@@ -379,10 +359,10 @@
 
       @media only screen and (max-width: 480px) {
         /*
-            @tab Mobile Styles
-            @section Heading 3
-            @tip Make the third-level headings larger in size for better readability on small screens.
-            */
+    @tab Mobile Styles
+    @section Heading 3
+    @tip Make the third-level headings larger in size for better readability on small screens.
+    */
         h3 {
           /*@editable*/
           font-size: 18px !important;
@@ -392,6 +372,11 @@
       }
 
       @media only screen and (max-width: 480px) {
+        /*
+    @tab Mobile Styles
+    @section Heading 4
+    @tip Make the fourth-level headings larger in size for better readability on small screens.
+    */
         h4 {
           /*@editable*/
           font-size: 16px !important;
@@ -401,6 +386,9 @@
       }
 
       @media only screen and (max-width: 480px) {
+        /*
+    @tab Mobile Styles
+    */
         p {
           /*@editable*/
           font-size: 14px !important;
@@ -408,6 +396,25 @@
           line-height: 150% !important;
         }
       }
+
+      /* @media screen and (max-width: 600px) {
+    .footer__text {
+    font-size: 2vw !important;
+    }
+    }
+
+
+
+
+
+
+
+
+    @media screen and (min-width: 601px) {
+    .footer__text {
+    font-size: 11.84px;
+    }
+    } */
     </style>
   </head>
   <body style="margin: 0; padding: 0">
@@ -434,163 +441,207 @@
                 <td align="center">
                   <table
                     role="presentation"
+                    style="
+                      width: 100%;
+                      border-collapse: collapse;
+                      border: 0;
+                      border-spacing: 0;
+                      background: #ffffff;
+                      margin-bottom: 25px;
+                    "
+                  >
+                    <tr>
+                      <td>
+                        <img
+                          src="https://userimg-assets.customeriomail.com/images/client-env-122594/1731583344654_verification%20ID%20copy%203%201_01JCN6J1WX6QG71Q7QRKKBQX1F.png"
+                          height="100%"
+                          width="100%"
+                          alt="Header Image"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <table
+                    role="presentation"
                     border="0"
-                    width="92%"
+                    width="95%"
                     cellspacing="0"
                     align="center"
                   >
                     <tr>
                       <td>
-                        <img
-                          src="https://userimg-assets.customeriomail.com/images/client-env-122594/1730887827849_Group%20427320987%20(1)_01JC0F8GMTWGFXYNK6VRKVZEV4.png"
-                          height="60.53px"
-                          width="131.98px"
-                          style="
-                            margin-top: 10px;
-                            padding-left: 10px;
-                            padding-right: 10px;
-                          "
-                          alt="Header Image"
-                        />
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <img
-                          src="https://userimg-assets.customeriomail.com/images/client-env-122594/1730887822694_boom%201_01JC0F8CDAGWRSGFNQ78GJVG0N.png"
-                          height="100%"
-                          width="100%"
-                          style="
-                            margin-top: 10px;
-                            padding-left: 10px;
-                            padding-right: 10px;
-                          "
-                          alt="Header Image"
-                        />
+                        <h4 style="margin: 10px 0; padding: 0; font-size: 15px">
+                          Hi [Customer's Name],
+                        </h4>
                       </td>
                     </tr>
 
-                    <tr>
+                    <!-- <tr>
                       <td>
-                        <div class="textArea">
-                          <h1
-                            style="
-                              font-size: 24px;
-                              line-height: 19px;
-                              padding-left: 10px;
-                              font-weight: 600px;
-                              padding-top: 30px;
-                            "
-                            ;
-                          >
-                            Hi Football Lover,
-                          </h1>
-                          <p
-                            style="
-                              font-size: 14px;
-                              line-height: 19px;
-                              font-weight: 350;
-                              margin: 22px 0;
-                              padding-left: 10px;
-                              padding-right: 10px;
-                            "
-                          >
-                                  We made it Finally!! Welcome to this
-                            rollercoaster of a week that is Gameweek 10, where
-                            <br />
-                            hearts were broken,  at least according to the Aella
-                            FPL table. 😂
-                          </p>
-
-                          <ul class="ul">
-                            <li>
-                              ManCity suffered their first loss this season to
-                              Bournemouth 
-                            </li>
-                            <li>
-                              Liverpool remains on top after winning their match
-                              with Brighton. 
-                            </li>
-                            <li>
-                              Tottenham bounced back from last week’s defeat and
-                              scored four goals against Aston Villa. 
-                            </li>
-                          </ul>
-                          <p
-                            style="
-                              font-size: 15px;
-                              line-height: 19px;
-                              padding-top: 10px;
-                              font-weight: 100;
-                              padding-left: 10px;
-                              padding-right: 10px;
-                            "
-                          >
-                            That is not all! Shoutout to our Manager of the
-                            Week,
-                            <span style="font-weight: 600">INVERT FC</span>, who
-                            knocked it out of the park by ending the week with
-                            85 points 👏 Of course, Payment has been made to his
-                            Aella Account. 
-                          </p>
-                          <img
-                            style="padding-top: 10px; padding-left: 30px"
-                            src="https://userimg-assets.customeriomail.com/images/client-env-122594/1730985264035_boom%20copy%202_01JC3C62B5G10NFDW34WQKYMTA.png"
-                            height="68.29px"
-                            width="548px"
-                            alt=" button image"
-                          />
-                          <a
-                            href="https://chat.whatsapp.com/Lslf0f4zqReIZmWw9wszIV"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <div
-                              style="
-                                text-align: center;
-                                margin-top: 10px;
-                                padding-right: 40px;
-                                padding-top: 20px;
-                              "
-                            >
-                              <img
-                                src="https://userimg-assets.customeriomail.com/images/client-env-122594/1730887828776_Group%20427320989%20(1)_01JC0F8HHNKX7B5VEV71WJW5SP.png"
-                                height="68.29px"
-                                width="548px"
-                                alt=" button image"
-                                style="padding-left: 30px; margin-bottom: 10px"
-                              />
-                            </div>
-                          </a>
-                        </div>
+                        <h1 style="font-size: 17px">
+                          We’ve got some news about your Loan request
+                        </h1>
                       </td>
-                    </tr>
+                    </tr> -->
+
                     <tr>
                       <td>
-                        <div>
-                          <img
-                            src="https://userimg-assets.customeriomail.com/images/client-env-122594/1730986986870_Group%20427320930%20(1)_01JC3DTME8SF2W492G1EQE1VXW.png"
-                            height="100%"
-                            width="100%"
-                            alt="Banner Image"
-                            style="
-                              padding-left: 10px;
-                              padding-right: 10px;
-                              padding-top: 20px;
-                            "
-                          />
-                        </div>
                         <p
                           style="
-                            font-size: 48px;
-                            line-height: 43px;
+                            margin: 10px 0;
+                            padding: 0;
                             font-weight: 400;
-                            padding-left: 20px;
-                            padding-top: 20px;
-                            padding-bottom: 20px;
+                            font-size: 14px;
+                            line-height: 21px;
                           "
                         >
-                          See you next Week! 
+                          Your company, [Company Name], is now part of Aella’s
+                          employee loan network, giving you a simple way to
+                          access funds when you need them. 
+                        </p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <p
+                          style="
+                            margin: 10px 0;
+                            padding: 0;
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 20px;
+                          "
+                        >
+                          To get started, here are the 8 steps:
+                        </p>
+                        <p
+                          style="
+                            margin: 10px 0;
+                            padding: 0;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 20px;
+                          "
+                        >
+                          1. Download the Aella App.
+                        </p>
+                        <p
+                          style="
+                            margin: 10px 0;
+                            padding: 0;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 21px;
+                          "
+                        >
+                          2. Create an account
+                        </p>
+                        <p
+                          style="
+                            margin: 10px 0;
+                            padding: 0;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 21px;
+                          "
+                        >
+                          3. Go to the Loan page
+                        </p>
+                        <p
+                          style="
+                            margin: 10px 0;
+                            padding: 0;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 21px;
+                          "
+                        >
+                          4. Click on "Get New Loan"
+                        </p>
+                        <p
+                          style="
+                            margin: 10px 0;
+                            padding: 0;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 21px;
+                          "
+                        >
+                          5. select "Employee Loan"
+                        </p>
+                        <p
+                          style="
+                            margin: 10px 0;
+                            padding: 0;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 21px;
+                          "
+                        >
+                          6. choose your employer
+                        </p>
+                        <p
+                          style="
+                            margin: 10px 0;
+                            padding: 0;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 21px;
+                          "
+                        >
+                          7. Enter your preferred loan amount
+                        </p>
+                        <p
+                          style="
+                            margin: 10px 0;
+                            padding: 0;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 21px;
+                          "
+                        >
+                          8. Await disbursement to your Aella wallet
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p
+                          style="
+                            margin: 0px 0;
+                            padding: 0;
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 21px;
+                          "
+                        >
+                          It’s easy, fast, and designed to fit your life’s
+                          needs. We’re here to help you meet your financial
+                          goals at every step.
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p
+                          style="
+                            margin: 10px 0;
+                            padding: 0;
+                            font-weight: 300;
+                            font-size: 14px;
+                          "
+                        >
+                          Your Buddy,<br />
+
+                          <span style="font-weight: 500"
+                            >The Aella Business Team</span
+                          >
                         </p>
                       </td>
                     </tr>
@@ -600,17 +651,7 @@
 
               <tr>
                 <td>
-                  <hr
-                    style="
-                      border: none;
-                      border-top: 2px solid #b2beb5;
-                      width: 100%;
-                      margin: 20px auto;
-                      margin-bottom: 0px;
-                    "
-                  />
-
-                  <div style="padding: 30px 20px; background-color: #e0ae95">
+                  <div style="padding: 30px 20px">
                     <table
                       role="presentation"
                       style="
@@ -618,7 +659,6 @@
                         border-collapse: collapse;
                         border: 0;
                         border-spacing: 0;
-                        padding-top: 20px;
                       "
                       align="center"
                     >
@@ -633,8 +673,8 @@
                             <tr>
                               <td align="left">
                                 <img
-                                  src="https://userimg-assets.customeriomail.com/images/client-env-122594/1715340758693_Group%20(1)_01HXH4DMN9QQ72VQVXCNEG46X9.png"
-                                  width="80"
+                                  src="https://userimg-assets.customeriomail.com/images/client-env-122594/1731584881063_Group%20(3)_01JCN80WW6Q75KXDS5HBA14RK7.png"
+                                  width="75"
                                   alt="Footer logo"
                                 />
                               </td>
@@ -647,13 +687,13 @@
                               >
                                 <a
                                   target="_blank"
-                                  href="https://www.facebook.com/aellaapp/"
+                                  href="https://www.tiktok.com/@aellaapp"
                                 >
                                   <img
-                                    src="https://userimg-assets.customeriomail.com/images/client-env-122594/1708942222527_facebook_01HQJE9SC62CPY3RX5FV714SRK.png"
+                                    src="https://userimg-assets.customeriomail.com/images/client-env-122594/1731584909297_tiktok-logo-logo-svgrepo-com%201_01JCN81RE72J568335CESPPHER.png"
                                     width="25"
                                     height="25"
-                                    alt="facebook icon"
+                                    alt="tiktokIcon"
                                   />
                                 </a>
                               </td>
@@ -663,13 +703,13 @@
                               >
                                 <a
                                   target="_blank"
-                                  href="https://twitter.com/aella"
+                                  href="https://www.facebook.com/aellaapp/"
                                 >
                                   <img
-                                    src="https://userimg-assets.customeriomail.com/images/client-env-122594/1726654585390_instagram-svgrepo-com%20(1)%202%20(1)_01J82A6Z33SM1WN1KC9WGTYSPJ.png"
+                                    src="https://userimg-assets.customeriomail.com/images/client-env-122594/1731584921877_Vector_01JCN824KFHCHMAVVBY1HW60CV.png"
                                     width="25"
                                     height="25"
-                                    alt="x icon"
+                                    alt="facebookIcon"
                                   />
                                 </a>
                               </td>
@@ -682,10 +722,10 @@
                                   href="https://www.instagram.com/aellaapp/"
                                 >
                                   <img
-                                    src="https://userimg-assets.customeriomail.com/images/client-env-122594/1726654513141_instagram-f-svgrepo-com%201_01J82A4S81M45DVG27BMHAKVVA.png"
+                                    src="https://userimg-assets.customeriomail.com/images/client-env-122594/1731584870484_Group%20(2)_01JCN80JH4TBSYG27N9P1XDB6A.png"
                                     width="25"
                                     height="25"
-                                    alt="instagram icon"
+                                    alt="instagramIcon"
                                   />
                                 </a>
                               </td>
@@ -695,13 +735,13 @@
                               >
                                 <a
                                   target="_blank"
-                                  href="https://www.tiktok.com/@aellaapp"
+                                  href="https://twitter.com/aella"
                                 >
                                   <img
-                                    src="https://userimg-assets.customeriomail.com/images/client-env-122594/1726654551837_tiktok-logo-logo-svgrepo-com%201_01J82A625A93QCKRZC98CV0MB3.png"
+                                    src="https://userimg-assets.customeriomail.com/images/client-env-122594/1731584896857_instagram-svgrepo-com%20(1)%202_01JCN81C9NCT98C76QG33YKD2Z.png"
                                     width="25"
                                     height="25"
-                                    alt="tiktiok icon"
+                                    alt="xIcon"
                                   />
                                 </a>
                               </td>
@@ -711,7 +751,15 @@
                       </tr>
                       <tr>
                         <td>
-                          <p class="paragraph">
+                          <p
+                            style="
+                              margin: 16px 0;
+                              padding: 0;
+                              text-align: justify;
+                              font-size: 17px;
+                              font-weight: 300;
+                            "
+                          >
                             Should you need our help, you can simply reply this
                             message or use any of our social media pages.
                           </p>
@@ -784,7 +832,7 @@
                             style="
                               margin: 16px 0;
                               padding: 0;
-                              font-size: 12px;
+                              font-size: 14px;
                               font-weight: 300;
                             "
                           >
