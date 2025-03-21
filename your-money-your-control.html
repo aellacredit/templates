@@ -128,83 +128,50 @@
 
       body,
       #bodyTable {
-        /*@editable*/
         background-color: #ffffff;
       }
 
       h1 {
-        /*@editable*/
         color: #333;
-        /*@editable*/
         font-family: upgrade, Helvetica;
-        /*@editable*/
         font-size: 24px;
-        /*@editable*/
         font-style: normal;
-        /*@editable*/
         font-weight: 600;
-        /*@editable*/
         line-height: 32px;
-        /*@editable*/
         letter-spacing: normal;
-        /*@editable*/
         text-align: left;
       }
 
       p {
-        /*@editable*/
         color: #333;
-        /*@editable*/
         font-family: upgrade, Helvetica;
-        /*@editable*/
         font-size: 18px;
-        /*@editable*/
         font-style: normal;
-        /*@editable*/
         font-weight: 400;
-        /*@editable*/
         line-height: 32px;
-        /*@editable*/
         letter-spacing: normal;
-        /*@editable*/
         text-align: left;
       }
 
       h5 {
-        /*@editable*/
         color: #333;
-        /*@editable*/
         font-family: upgrade, Helvetica;
-        /*@editable*/
         font-size: 16px;
-        /*@editable*/
         font-style: normal;
-        /*@editable*/
         font-weight: 600;
-        /*@editable*/
         line-height: 32px;
-        /*@editable*/
         letter-spacing: normal;
-        /*@editable*/
         text-align: left;
       }
 
       ol {
-        /*@editable*/
         color: #333;
-        /*@editable*/
         font-family: upgrade, Helvetica;
-        /*@editable*/
         font-size: 18px;
-        /*@editable*/
         font-style: normal;
-        /*@editable*/
         font-weight: 400;
-        /*@editable*/
         line-height: 32px;
-        /*@editable*/
         letter-spacing: normal;
-        /*@editable*/
         text-align: left;
         margin: 20px 0px !important;
         padding: 0 0 0 20px !important;
@@ -241,21 +208,13 @@
       }
 
       h2 {
-        /*@editable*/
         color: #333;
-        /*@editable*/
         font-family: upgrade, Helvetica;
-        /*@editable*/
         font-size: 14px;
-        /*@editable*/
         font-style: normal;
-        /*@editable*/
         font-weight: 600;
-        /*@editable*/
         line-height: 32px;
-        /*@editable*/
         letter-spacing: normal;
-        /*@editable*/
         text-align: left;
       }
 
@@ -286,27 +245,18 @@
         margin-right: 10px;
         border-radius: 10px;
         margin-top: 10px;
-
         color: #000 !important;
         border: 1px solid #639fffb5;
       }
 
       h3 {
-        /*@editable*/
         color: #333;
-        /*@editable*/
         font-family: upgrade, Helvetica;
-        /*@editable*/
         font-size: 12px;
-        /*@editable*/
         font-style: normal;
-        /*@editable*/
         font-weight: 600;
-        /*@editable*/
         line-height: 32px;
-        /*@editable*/
         letter-spacing: normal;
-        /*@editable*/
         text-align: left;
       }
 
@@ -326,86 +276,79 @@
       .move_to_left {
         transform: translateX(-4.5%);
       }
+
       @media (prefers-color-scheme: dark) {
         .textArea {
           background: linear-gradient(to right, #ffffff, #ffffff);
-
           color: black;
         }
       }
 
-      @media only screen and (min-width: 768px) {
+      /* Mobile-specific styles */
+      @media only screen and (max-width: 480px) {
         .templateContainer {
-          width: 600px !important;
-        }
-      }
-
-      @media only screen and (max-width: 480px) {
-        body,
-        table,
-        td,
-        p,
-        a,
-        li,
-        blockquote {
-          -webkit-text-size-adjust: none !important;
-        }
-      }
-
-      @media only screen and (max-width: 480px) {
-        body {
           width: 100% !important;
-          min-width: 100% !important;
         }
-      }
 
-      @media only screen and (max-width: 480px) {
-        h1 {
-          /*@editable*/
-          font-size: 22px !important;
-          /*@editable*/
-          line-height: 125% !important;
+        .text-area-1 {
+          width: 100% !important;
+          height: auto !important;
+          margin: 10px 0 !important;
+          padding: 10px !important;
+          border-radius: 14px !important;
         }
-      }
 
-      @media only screen and (max-width: 480px) {
-        h2 {
-          /*@editable*/
-          font-size: 20px !important;
-          /*@editable*/
-          line-height: 125% !important;
-        }
-      }
-
-      @media only screen and (max-width: 480px) {
-        /*
-            @tab Mobile Styles
-            @section Heading 3
-            @tip Make the third-level headings larger in size for better readability on small screens.
-            */
-        h3 {
-          /*@editable*/
-          font-size: 18px !important;
-          /*@editable*/
-          line-height: 125% !important;
-        }
-      }
-
-      @media only screen and (max-width: 480px) {
-        h4 {
-          /*@editable*/
-          font-size: 16px !important;
-          /*@editable*/
-          line-height: 150% !important;
-        }
-      }
-
-      @media only screen and (max-width: 480px) {
-        p {
-          /*@editable*/
+        .text-area-1 h1 {
           font-size: 14px !important;
-          /*@editable*/
-          line-height: 150% !important;
+          line-height: 21px !important;
+          padding-left: 10px !important;
+          padding-top: 10px !important;
+          padding-bottom: 10px !important;
+        }
+
+        .text-area-1 p {
+          font-size: 14px !important;
+          line-height: 20px !important;
+          padding-left: 10px !important;
+          padding-bottom: 10px !important;
+        }
+
+        .area-2 img {
+          width: 100% !important;
+          height: auto !important;
+          max-height: 300px !important;
+          padding-top: 0 !important;
+          border-radius: 10px !important;
+        }
+
+        .area-2 {
+          margin-top: 10px !important;
+          margin-bottom: 10px !important;
+        }
+
+        p {
+          font-size: 14px !important;
+          line-height: 20px !important;
+          margin: 10px 0 !important;
+        }
+
+        img[src*="Group%20427321027"] {
+          width: 150px !important;
+          height: auto !important;
+          margin: 10px auto !important;
+        }
+
+        .footer__text,
+        .footer__text__1 {
+          font-size: 12px !important;
+        }
+
+        .horizontal__line {
+          margin: 10px 0 !important;
+        }
+
+        .move_to_left {
+          transform: none !important;
         }
       }
     </style>
@@ -453,9 +396,10 @@
                     <tr>
                       <td>
                         <div
+                          class="text-area-1"
                           style="
-                            width: 655px;
-                            height: 135px;
+                            width: 100%;
+                            height: auto;
                             background: #41445f;
                             margin-top: 10px;
                             border-radius: 14px;
@@ -466,13 +410,12 @@
                             style="
                               font-size: 18px;
                               line-height: 21px;
-                              padding-left: 20px;
-                              font-weight: 600px;
-                              padding-bottom: 20px;
+                              padding-left: 10px;
+                              font-weight: 600;
+                              padding-bottom: 10px;
                               color: #ffffff;
                               padding-top: 10px;
                             "
-                            ;
                           >
                             Hey [Fname],
                           </h1>
@@ -480,19 +423,18 @@
                             style="
                               color: #ffffff;
                               font-size: 14px;
-                              padding-left: 20px;
-                              line-height: 23px;
+                              padding-left: 10px;
+                              line-height: 20px;
                               font-weight: 100;
+                              padding-bottom: 10px;
                             "
                           >
                             Are you tired of juggling multiple cards? Our
                             customizable cards offer a wide range of benefits
-                            designed <br />
-                            to enhance the security and flexibility needed for
-                            your daily activities. Your CTRL Card is your key to
-                            <br />
-                            seamless, secure, and instant transactions anytime,
-                            anywhere.
+                            designed to enhance the security and flexibility
+                            needed for your daily activities.<br />
+                            Your CTRL Card is your key to seamless, secure, and
+                            instant transactions anytime, anywhere.
                           </p>
                         </div>
                         <img
@@ -501,16 +443,16 @@
                           width="100%"
                           alt="Header Image"
                         />
-                        <div>
+                        <div class="area-2">
                           <img
                             style="
                               width: 100%;
                               height: 584px;
-                              border-radius: 20px;
-                              padding-top: 10px;
+
+                              border-radius: 10px;
+                              padding-top: 0;
                             "
-                            src=" https://userimg-assets.customeriomail.com/images/client-env-122594/1741870424147_Apply%20for%20cartd%201_01JP7S2S27NC631KW8Q3ZHQBBY.png
-                         "
+                            src="https://userimg-assets.customeriomail.com/images/client-env-122594/1741870424147_Apply%20for%20cartd%201_01JP7S2S27NC631KW8Q3ZHQBBY.png"
                             alt=""
                           />
                         </div>
@@ -518,30 +460,31 @@
                           <p
                             style="
                               font-size: 14px;
-                              line-height: 21px;
+                              line-height: 20px;
                               font-weight: 400;
-                              margin-top: 20px;
+                              margin-top: 10px;
                             "
                           >
                             Don't wait—get your card now and take full CTRL of
                             your finances!
                           </p>
                           <a href="https://launch.aella.app/" target="_blank">
-                          <img
-                            style="
-                              width: 218.5px;
-                              height: 36.11px;
-                              margin-top: 20px;
-                              display: block;
-                              margin-left: auto;
-                              margin-right: auto;
-                            "
-                            src="https://userimg-assets.customeriomail.com/images/client-env-122594/1741859565498_Group%20427321027_01JP7EQC80VN6WCPN3C2KJ9S27.png"
-                            alt=""
-                          />
-                          <p style="font-size: 14px;">
-                            Your buddy, <br>
-                            <span style="font-weight: 700;">Aella</span>
+                            <img
+                              style="
+                                width: 218.5px;
+                                height: 36.11px;
+                                margin-top: 10px;
+                                display: block;
+                                margin-left: auto;
+                                margin-right: auto;
+                              "
+                              src="https://userimg-assets.customeriomail.com/images/client-env-122594/1741859565498_Group%20427321027_01JP7EQC80VN6WCPN3C2KJ9S27.png"
+                              alt=""
+                            />
+                          </a>
+                          <p style="font-size: 14px; margin-top: 10px">
+                            Your buddy,<br />
+                            <span style="font-weight: 700">Aella</span>
                           </p>
                         </div>
                       </td>
@@ -557,12 +500,11 @@
                       border: none;
                       border-top: 2px solid #b2beb5;
                       width: 100%;
-                      margin: 20px auto;
-                      margin-bottom: 0px;
+                      margin: 10px auto;
                     "
                   />
 
-                  <div style="padding: 30px 20px; background-color: #ffffff">
+                  <div style="padding: 20px; background-color: #ffffff">
                     <table
                       role="presentation"
                       style="
@@ -570,7 +512,6 @@
                         border-collapse: collapse;
                         border: 0;
                         border-spacing: 0;
-                        padding-top: 20px;
                       "
                       align="center"
                     >

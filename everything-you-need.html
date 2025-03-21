@@ -367,7 +367,26 @@
           line-height: 125% !important;
         }
       }
+      @media only screen and (max-width: 480px) {
+        .text-area-1 h1 {
+          font-size: 16px !important;
+          line-height: 20px !important;
+          padding-left: 15px !important;
+          padding-bottom: 15px !important;
+        }
 
+        .text-area-1 p {
+          font-size: 12px !important;
+          line-height: 18px !important;
+          padding-left: 15px !important;
+        }
+
+        .text-area-1 {
+          width: 100% !important;
+          height: auto !important;
+          padding-bottom: 10px !important;
+        }
+      }
       @media only screen and (max-width: 480px) {
         h2 {
           /*@editable*/
@@ -548,12 +567,12 @@
                     <tr>
                       <td>
                         <div
+                          class="text-area-1"
                           style="
                             width: 635px;
                             height: 135px;
                             background: #41445f;
-margin-top: 10px;
-                            margin-left: 14px;
+                            margin-top: 10px;
                             margin-right: 14px;
                             border-radius: 14px;
                             margin-bottom: 10px;
@@ -572,7 +591,7 @@ margin-top: 10px;
                             ;
                           >
                             Hey [Fname],
-                          </h1>
+                          </h1 class="h1-2">
                           <p
                             style="
                               color: #ffffff;
@@ -580,10 +599,11 @@ margin-top: 10px;
                               padding-left: 20px;
                               line-height: 23px;
                               font-weight: 100;
+                              gap: 10px;
                             "
                           >
                             Welcome to Aella! We’re thrilled to have you on
-                            board. Whether you're looking to <br />
+                            board. Whether you're looking to 
                             save, borrow, or earn, Aella has the perfect
                             financial tools for you.
                           </p>
@@ -594,61 +614,72 @@ margin-top: 10px;
                           width="100%"
                           alt="Header Image"
                         />
-                        <div>
-                            <div
+                        <div
+                          style="
+                            width: 100%;
+                            background: #41445f;
+                            border-radius: 14px;
+                            flex-direction: column;
+                            align-items: center;
+                            padding: 20px;
+                          "
+                        >
+                          <div
                             style="
-                              width: 100%;
-                              height: 241px;
-                              background: #41445f;
-                              margin-left: 1px;
-                              margin-right: 14px;
-                              border-radius: 14px;
                               display: flex;
                               align-items: center;
-                              padding: 20px;
+                              justify-content: center;
+                              width: 100%;
+                              gap: 30px; /* Increased space between image and text */
                             "
                           >
-                            <!-- Left Image -->
+                            <!-- Image -->
                             <img
                               src="https://userimg-assets.customeriomail.com/images/client-env-122594/1741859566454_Vector%20(1)_01JP7EQD5HN2KA5X4C6NRBW0XG.png"
-                              height="100px"
+                              height="50px"
                               width="54px"
                               alt="Header Image"
-                              style="margin-right: 15px;"
+                              style="margin-right: 15px"
                             />
-                          
-                            <!-- Text and Bottom Image Wrapper (Centered) -->
-                            <div style="display: flex; flex-direction: column; align-items: center; text-align: center; flex: 1;">
-                              <p
-                                style="
-                                  font-size: 18px;
-                                  line-height: 23px;
-                                  font-weight: 100;
-                                  margin: 0;
-                                  color: #ffffff;
-                                "
-                              >
-                                For some housekeeping, if you find this email in your Spam folder <br />
-                                or Promotions tab, kindly move us to your primary inbox so you<br />
-                                don’t miss out on vital information.
-                              </p>
-                          
-                              <!-- Bottom Image (Now Centered) -->
-                              <a href="https://launch.aella.app/" target="_blank" style="display: flex; justify-content: center;">
-                                <img
-                                  src="https://userimg-assets.customeriomail.com/images/client-env-122594/1741859563929_Group%20427321026_01JP7EQAPH5JYHTEMG8MKX9BW7.png"
-                                  height="36px"
-                                  style="margin-top: 15px; max-width: 100%;"
-                                  alt="Call to Action"
-                                />
-                              </a>
-                              
-                            </div>
+
+                            <!-- Text -->
+                            <p
+                              style="
+                                font-size: 18px;
+                                line-height: 23px;
+                                font-weight: 100;
+                                margin: 0;
+                                color: #ffffff;
+                                text-align: left;
+                              "
+                            >
+                              For some housekeeping, if you find this email in
+                              your Spam folder or Promotions tab, kindly move us
+                              to your primary inbox so you don’t miss out on
+                              vital information.
+                            </p>
                           </div>
-                          
-                          
-                         
-                          </div>
+
+                          <!-- Button Section (below the text and image) -->
+                          <a
+                            href="https://launch.aella.app/"
+                            target="_blank"
+                            style="
+                              display: block; /* Forces it to be on a new line */
+                              margin-top: 20px;
+                              text-align: center;
+                              position: relative;
+                              z-index: 10;
+                              cursor: pointer;
+                            "
+                          >
+                            <img
+                              src="https://userimg-assets.customeriomail.com/images/client-env-122594/1741859563929_Group%20427321026_01JP7EQAPH5JYHTEMG8MKX9BW7.png"
+                              height="36px"
+                              style="max-width: 100%"
+                              alt="Call to Action"
+                            />
+                          </a>
                         </div>
                       </td>
                     </tr>
